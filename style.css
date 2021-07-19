@@ -1,0 +1,35 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+#header-nav {
+    background-image: url('header_back.jpg');
+    border-radius: 0;
+    border: 0;
+}
+
+
+#nav-list {
+    margin-top: 4px;
+}
+#nav-list a {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    margin-left:0;
+}
+#nav-list a:hover {
+    background: #5A5A5A;
+}
+
+.panel-footer{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.footer-link {
+    font-size: 22px;
+    color: black;
+    margin: 20px 20px;
+    text-decoration: none;
+}
