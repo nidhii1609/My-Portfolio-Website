@@ -5,12 +5,15 @@ body {
     background-image: url('header_back.jpg');
     border-radius: 0;
     border: 0;
+    padding-bottom:0px;
+    margin-bottom:0px;
 }
 
 
 #nav-list {
     margin-top: 4px;
 }
+
 #nav-list a {
     color: #ffffff;
     font-weight: bold;
@@ -22,14 +25,84 @@ body {
     background: #5A5A5A;
 }
 
-.panel-footer{
+.top-container{
+    margin: 0px 0px 0px 0px;
+    text-align:center;
+    height: 550px;
+    background-image: url('Images/nebula.jpg');
+    animation: animatedBackground 10s linear infinite alternate;
+}
+.intro-body{
+    padding-top:175px;
+}
+#intro-title{
+    position: center;
+    font-size:50px;
+    padding-bottom: 10px;
+    font-weight:bold;
+    color: white;
+}
+
+#intro{
+    position:center;
+    font-size:20px;
+    color:#ffffea;
+}
+
+
+#education{
     text-align: center;
-    margin-bottom: 20px;
+    font-size:17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.titles{
+    text-align:center;
+    font-weight: bold;
+    font-size:40px;
+    padding-bottom:30px;
+    
+}
+.edu{
+    width: 180px;
+    height: 180px;
+    margin: 2rem;
+}
+
+hr {
+    border: dotted #EAF6F6 10px;
+    border-bottom: none;
+    width: 5%;
+    margin: 50px auto;
+}
+/* Mentorship-section */
+
+
+/* SKILL SECTION */
+.skills-title{
+    text-align:center;
+    font-size: 20px;
+}
+/* footer */
+
+
+.panel-footer{
+    background-image: url('header_back.jpg');
+    text-align: center;
     margin-top: 20px;
 }
+
 .footer-link {
     font-size: 22px;
-    color: black;
+    font-weight:bold;
+    color:aquamarine;
     margin: 20px 20px;
     text-decoration: none;
 }
+
+.footer-link a:hover{
+    color:#5A5A5A;
+}
+#copy{
+    color: white;
+}
+

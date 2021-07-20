@@ -3,9 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
         <title>Nidhi</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -20,65 +24,63 @@
                     <ul id="nav-list" class="nav navbar-nav navbar-right">
                        
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
+                            <a class="nav-link" href="#my-skills">SKILLS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Education</a>
+                            <a class="nav-link" href="#education">EDUCATION</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="#projects">PROJECTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">CONTACT</a>
                         </li>
                     </ul>
             </nav>
     
         </header>
-
         <div class="top-container">
-            <h1>Hello I'm Nidhi</h1>
-            <div id="intro">
-                <div>I am a Final Year undergraduate student at Delhi Technological University.</div>    
-                <div> I am pursuing my B.Tech. in Computer Engineering</div>
-                <div>Wanna know more about me.. Let's Scroll</div>
-            </div>   
+            <div class=intro-body>
+                <div id="intro-title">Hello I'm Nidhi</div>
+                <div id="intro">
+                    <div>I am a Final Year undergraduate student at Delhi Technological University.</div>    
+                    <div> I am pursuing my B.Tech. in Computer Engineering</div>
+                    <div>Wanna know more about me....</div>
+                    <div>Let's Scroll...</div>
+                </div>
+            </div>  
         </div>
-
-
-        
-
-        <div class="education">
-            <h2>Education</h2>
-            <div class="row">
+        <hr />
+        <div class="container" id="education">
+            <div class = "titles">Education</div>
 
               <div class="col-sm-4">
-                <img class="dtu" src="Images/dtu.png" />
+                <img class="edu" src="Images/dtu.png" />
                 <div>DELHI TECHNOLOGICAL UNIVERSITY</div>
                 <div>B.Tech Computer Engineering: <em>8.29 CGPA</em></div>
                 <div>2018-2022</div>
               </div>
 
               <div class="col-sm-4">
-                <img class="rskv" src="Images/cbse.png"/>
+                <img class="edu" src="Images/cbse.png"/>
                 <div>RSKV No.1 Bholanath Nagar, Shahdara-110032</div>
                 <div>CBSE Class 12th : 81.4%</div>
                 <div>2017</div>
               </div>
 
               <div class="col-sm-4">
-                <img class="" src="Images/cbse.png"  />
+                <img class="edu" src="Images/cbse.png"  />
                 <div>GSKV GT Road, Shahdara-110032</div>
                 <div>CBSE Class 10th : 8.4 CGPA</div>
                 <div>2015</div>
               </div>
 
-            </div>
+            
         </div>
         <hr />
         
-        <div class="container" class="engage">
-            <div><h2>Mentorship</h2></div>
+        <div class="container" id="engage">
+            <div class="titles">Mentorship</div>
             <div>Microsoft Engage Mentorship Program 2020</div>
             <div>
                 Microsoft Engage is a program created by Microsoft engineers, in association with Ace Hacker, 
@@ -90,9 +92,10 @@
                 I Learned AI concepts from Microsoft’s Experts and then developed a project using AI. 
             </div>
         </div>
+        <hr/>
 
-        <div class="container" class="projects">
-            <h3>Projects</h3>
+        <div class="container" id="projects">
+            <div class="titles">Projects</div>
             <div class="col-sm-6">
                 <div class="project-title">Unbeatable Tic-Tac-Toe Game</div>
                 <div>
@@ -101,21 +104,25 @@
                     This game includes multiple levels from 1 to 4 and Unlimited. The power of AI increases from level 1 to 4 and 
                     at unlimited level the game will become unbeatable. 
                 </div>
-                <a class="project-link" href="#">Project Link</a>
+                <a class="project-link" href="https://nidhii1609.github.io/My-tic-tac-toe-project/">Game Link</a>
+                <a class="project-link" href="https://github.com/nidhii1609/My-tic-tac-toe-project">Project Link</a>
             </div>
 
             <div class="col-sm-6">
                 <div class="project-title">Helicopter Game</div>
                 <div>
-                    In this game, We have to rescue the helicopter from the obstacles and score will be displayed at the end. 
-                    The game is developed by using python's Pygame library. 
+                    In this game, the player operate the helicopter in a way that it should not collide with the walls 
+                    that come on its way. We have to rescue the helicopter from the obstacles and the score will be displayed 
+                    at the end. The game is developed by using Pygame which is a set of Python modules and it includes the sound 
+                    libraries for the Python programming language.
                 </div>
-                <a class="project-link" href="#">Project Link</a>
+                <a class="project-link" href="https://github.com/nidhii1609/Helicopter-game">Project Link</a>
             </div>
         </div>
-        
-        <div class="container" class="my-skills">
-            <div><h2>My Skills</h2></div>
+        <hr/>
+
+        <div class="container" id="my-skills">
+            <div class="titles">My Skills</div>
             <div class="col-sm-4">
                 <div class="skills-title">Programming Languages:</div>
                 <ul>
@@ -149,7 +156,7 @@
             </div>
         </div>
 
-        <footer class="panel-footer">
+        <footer class="panel-footer" id="contact">
             <div class="container">
                 <br/>
                 <div class="row">
@@ -164,7 +171,7 @@
                     </a>
                 </div>
                 <br/>
-              <div class="text-center">&copy; Copyright Nidhi 2021</div>
+              <div class="text-center" id="copy">&copy; Copyright Nidhi 2021</div>
             </div>
           </footer>
     </body>
