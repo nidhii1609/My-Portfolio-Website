@@ -1,215 +1,394 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width = device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
-        <title>Nidhi</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nidhi — Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
 
-    <body>
-        <header>
-            <nav id="header-nav" class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header pull-left">
-                        <div class="navbar-brand">
-                        </div>
-                    </div>
-                    
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+  <!-- Animated mesh gradient background -->
+  <div class="mesh-gradient"></div>
 
-                    <div id="collapsable-nav" class="collapse navbar-collapse">
-                        <ul id="nav-list" class="nav navbar-nav navbar-right">
-                        
-                            <li class="nav-item" >
-                                <a class="nav-link" href="#my-skills">
-                                    <span >SKILLS</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#education">
-                                    <span >EDUCATION</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projects">
-                                    <span>PROJECTS</span>
-                                </a>
-                            </li>
-                            <li class="nav-item" >
-                                <a class="nav-link" href="#contact">
-                                    <span>CONTACT</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-            </nav>
-    
-        </header>
-        <div class="top-container">
-            <div class=intro-body>
-                <div id="intro-title">Hello I'm Nidhi</div>
-                <div id="intro">
-                    <div>I am a Final Year undergraduate student at Delhi Technological University.</div>    
-                    <div> I am pursuing my B.Tech. in Computer Engineering</div>
-                    <div>Wanna know more about me....</div>
-                    <div>Let's Scroll...</div>
-                </div>
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="nav-logo">N</div>
+    <div class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="nav-btn">Contact</a>
+    </div>
+    <button class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="hero-name">Nidhi</h1>
+      <div class="hero-label">Software Engineer III at Walmart Global Tech</div>
+      <h2 class="hero-title">
+        Building the future of
+        <span class="rotating-text">
+          <span class="word active">distributed systems</span>
+          <span class="word">real-time data</span>
+          <span class="word">cloud infrastructure</span>
+        </span>
+      </h2>
+      <p class="hero-subtitle">
+        Specializing in Spark, Kafka, Elasticsearch & GCP
+      </p>
+      <div class="hero-cta">
+        <a href="#work" class="btn-primary">
+          <span>Explore My Work</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="work">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      
+      <div class="work-list">
+        <div class="work-item scroll-reveal">
+          <div class="work-header">
+            <div class="work-info">
+              <h3>Software Engineer III</h3>
+              <p class="work-company">Walmart Global Tech India</p>
+              <p class="work-loc">Bengaluru, Karnataka</p>
             </div>
+            <div class="work-period">
+              <span class="period-badge">Aug 2024 — Present</span>
+              <span class="status-dot active"></span>
+            </div>
+          </div>
+          <ul class="work-highlights">
+            <li>Architected and scaled Elasticsearch product index supporting <strong>700M+ catalog items</strong> by partitioning data into 36 logical segments and optimizing 42-shard configuration, significantly improving indexing throughput and query latency</li>
+            <li>Designed and launched Online Sales Availability Signal exposing 1-year item-level sales (monthly + recent weekly granularity) in Elasticsearch and analytics systems, enabling improved merchandising insights and data-driven decisions</li>
+            <li>Drove end-to-end large-scale catalog optimization initiative eliminating unused keyword attributes and executing full upstream refresh, resulting in <strong>$730/day infrastructure cost savings</strong> across compute, Bigtable, replication, storage, and Dataproc resources</li>
+            <li>Led cloud cost optimization initiatives across GCP and distributed infrastructure by analyzing compute and storage utilization patterns, right-sizing clusters, and eliminating inefficiencies, resulting in a <strong>20% annual reduction in cloud expenditure</strong></li>
+            <li>Implemented automated streaming recovery mechanism improving system resilience and reducing manual operational intervention by <strong>20%</strong></li>
+            <li>Designed and integrated a real-time delivery speed signal into OpenAPI Native Checkout, enabling customers to view delivery estimates during AI-assisted shopping, enhancing purchase confidence and checkout experience</li>
+            <li>Decreased developer iteration cycles by <strong>90% (10min → 1min)</strong> by developing a local Spark Streaming test framework and comprehensive monitoring/alerting suites that enhanced deployment confidence</li>
+          </ul>
+          <div class="work-tech">
+            <span>Elasticsearch</span>
+            <span>Spark</span>
+            <span>GCP</span>
+            <span>Kafka</span>
+            <span>Airflow</span>
+            <span>Python</span>
+            <span>BigTable</span>
+            <span>Dataproc</span>
+          </div>
         </div>
-        <hr />
-        <div class="container" id="education">
-            <div class = "titles">EDUCATION</div>
 
-              <div class="col-sm-4">
-                <img class="edu" src="Images/dtu.png" />
-                <div>DELHI TECHNOLOGICAL UNIVERSITY</div>
-                <div>B.Tech Computer Engineering: <em>8.29 CGPA</em></div>
-                <div>2018-2022</div>
-              </div>
-
-              <div class="col-sm-4">
-                <img class="edu" src="Images/cbse.png"/>
-                <div>RSKV No.1 Bholanath Nagar, Shahdara-110032</div>
-                <div>CBSE Class 12th : 81.4%</div>
-                <div>2017</div>
-              </div>
-
-              <div class="col-sm-4">
-                <img class="edu" src="Images/cbse.png"  />
-                <div>GSKV GT Road, Shahdara-110032</div>
-                <div>CBSE Class 10th : 8.4 CGPA</div>
-                <div>2015</div>
-              </div>
-
-            
+        <div class="work-item scroll-reveal">
+          <div class="work-header">
+            <div class="work-info">
+              <h3>Software Engineer II</h3>
+              <p class="work-company">Walmart Global Tech India</p>
+              <p class="work-loc">Bengaluru, Karnataka</p>
+            </div>
+            <div class="work-period">
+              <span class="period-badge">Jun 2022 — July 2024</span>
+              <span class="status-dot"></span>
+            </div>
+          </div>
+          <ul class="work-highlights">
+            <li>Engineered high-impact batch export pipelines delivering catalog feeds to Google Merchant Center via secure SFTP, contributing to <strong>$2M+/day in attributed ROAS</strong></li>
+            <li>Built real-time streaming pipelines using Spark and Kafka to power Meta COOP integrations, enabling scalable dynamic ad delivery across Meta platforms</li>
+            <li>Managed cross-platform catalog syndication across TikTok, Meta, Pinterest, and Yahoo, ensuring <strong>99.9% feed consistency</strong> and high availability for global advertising partners</li>
+            <li>Developed Neustar attribution pipelines to securely share anonymized user data, improving advertising efficiency through precise audience retargeting and attribution modeling</li>
+            <li>Enabled TikTok Ads integration by building a scalable Hive-to-GCS batch pipeline, expanding product advertising reach and onboarding TikTok as a new marketing channel</li>
+          </ul>
+          <div class="work-tech">
+            <span>Spark</span>
+            <span>Kafka</span>
+            <span>Hive</span>
+            <span>GCS</span>
+            <span>Python</span>
+            <span>Scala</span>
+            <span>SFTP</span>
+            <span>BigQuery</span>
+          </div>
         </div>
-        <hr />
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-card scroll-reveal">
+          <div class="skill-header">
+            <div class="skill-icon">💻</div>
+            <h4>Programming Languages</h4>
+          </div>
+          <div class="skill-list">
+            <span>Python</span>
+            <span>Scala</span>
+            <span>C++</span>
+            <span>Java</span>
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-card scroll-reveal">
+          <div class="skill-header">
+            <div class="skill-icon">🗄️</div>
+            <h4>Big Data Technologies</h4>
+          </div>
+          <div class="skill-list">
+            <span>Apache Spark</span>
+            <span>Apache Kafka</span>
+            <span>Apache Hive</span>
+            <span>Elasticsearch</span>
+            <span>Spark Streaming</span>
+            <span>Parquet</span>
+            <span>Data Warehousing</span>
+            <span>Data Modelling</span>
+          </div>
+        </div>
+
+        <div class="skill-card scroll-reveal">
+          <div class="skill-header">
+            <div class="skill-icon">☁️</div>
+            <h4>Cloud & Databases</h4>
+          </div>
+          <div class="skill-list">
+            <span>GCP</span>
+            <span>BigQuery</span>
+            <span>MySQL</span>
+            <span>Google BigTable</span>
+            <span>Hive</span>
+          </div>
+        </div>
+
+        <div class="skill-card scroll-reveal">
+          <div class="skill-header">
+            <div class="skill-icon">📚</div>
+            <h4>Frameworks & Libraries</h4>
+          </div>
+          <div class="skill-list">
+            <span>Bootstrap</span>
+            <span>Numpy</span>
+            <span>Pandas</span>
+            <span>OpenCV</span>
+            <span>Matplotlib</span>
+            <span>Pygame</span>
+          </div>
+        </div>
+
+        <div class="skill-card scroll-reveal">
+          <div class="skill-header">
+            <div class="skill-icon">🛠️</div>
+            <h4>Developer Tools & AI</h4>
+          </div>
+          <div class="skill-list">
+            <span>Cursor</span>
+            <span>GitHub Copilot</span>
+            <span>Claude Sonnet</span>
+            <span>ChatGPT</span>
+            <span>Airflow</span>
+            <span>Maven</span>
+            <span>Git</span>
+            <span>Sonar</span>
+            <span>Snyk</span>
+            <span>REST APIs</span>
+            <span>Grafana</span>
+            <span>JUnit</span>
+            <span>Scalatest</span>
+          </div>
+        </div>
+
+        <div class="skill-card scroll-reveal">
+          <div class="skill-header">
+            <div class="skill-icon">📖</div>
+            <h4>Coursework</h4>
+          </div>
+          <div class="skill-list">
+            <span>Data Structures</span>
+            <span>Algorithm Design</span>
+            <span>Object Oriented Programming</span>
+            <span>Database Management</span>
+            <span>Operating Systems</span>
+            <span>Computer Networks</span>
+            <span>Software Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Achievements -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title">Education & Achievements</h2>
+      
+      <div class="about-grid">
+        <div class="edu-card scroll-reveal">
+          <img class="edu-logo" src="Images/dtu.png" alt="DTU Logo" />
+          <h3>Bachelor of Technology</h3>
+          <p class="edu-field">Computer Engineering</p>
+          <p class="edu-school">Delhi Technological University</p>
+          <div class="edu-details">
+            <span>📍 Delhi, India</span>
+            <span>📅 2018 — 2022</span>
+            <span>⭐ CGPA: 8.49</span>
+          </div>
+          <div class="coursework">
+            <h5>Relevant Coursework</h5>
+            <div class="coursework-tags">
+              <span>Data Structures</span>
+              <span>Algorithm Design</span>
+              <span>Object Oriented Programming</span>
+              <span>Database Management</span>
+              <span>Operating Systems</span>
+              <span>Computer Networks</span>
+              <span>Software Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="achievement-card scroll-reveal">
+          <div class="ach-badge">🏆</div>
+          <h4>Microsoft Engage Mentorship Program 2020</h4>
+          <p>Microsoft Engage is a program created by Microsoft engineers, in association with Ace Hacker, for students to work on projects with live interaction and help from engineers and mentors at Microsoft. In 2020, the projects were based on the theme <strong>'Mars Colonization'</strong>.</p>
+          <p>Selected among <strong>600 students from all over India</strong> for this prestigious AI-focused mentorship. Learned AI concepts from Microsoft's experts and developed a project using AI under the guidance of Microsoft senior architects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card scroll-reveal">
+          <div class="project-header">
+            <h3>Unbeatable Tic-Tac-Toe Game</h3>
+            <span class="project-badge">2020</span>
+          </div>
+          <p class="project-desc">
+            Unbeatable Tic-tac-toe Web Application powered by AI (Artificial Intelligence) using Minimax Algorithm. 
+            Built with HTML, CSS and JavaScript, hosted on GitHub pages for Microsoft's Engage Mentorship Program 2020. 
+            This game includes multiple levels from 1 to 4 and Unlimited. The power of AI increases from level 1 to 4 and 
+            at unlimited level the game becomes unbeatable.
+          </p>
+          <div class="project-links">
+            <a href="https://nidhii1609.github.io/My-tic-tac-toe-project/" target="_blank" class="project-link">
+              <span>Live Demo</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="https://github.com/nidhii1609/My-tic-tac-toe-project" target="_blank" class="project-link">
+              <span>View Code</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+          </div>
+          <div class="work-tech">
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>AI/ML</span>
+          </div>
+        </div>
+
+        <div class="project-card scroll-reveal">
+          <div class="project-header">
+            <h3>Helicopter Game</h3>
+            <span class="project-badge">2020</span>
+          </div>
+          <p class="project-desc">
+            In this game, the player operates the helicopter in a way that it should not collide with the walls 
+            that come on its way. We have to rescue the helicopter from the obstacles and the score will be displayed 
+            at the end. The game is developed using Pygame which is a set of Python modules and includes the sound 
+            libraries for the Python programming language.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/nidhii1609/Helicopter-game" target="_blank" class="project-link">
+              <span>View Code</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+          </div>
+          <div class="work-tech">
+            <span>Python</span>
+            <span>Pygame</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="contact-desc">Open to interesting conversations and opportunities</p>
         
-        <div class="container" id="engage">
-            <div class="titles">MENTORSHIP</div>
-                
-            <div class="col-sm-6">
-                <img class="engage" src="Images/engage.jpg"  />
+        <div class="contact-grid">
+          <a href="mailto:nidhimehar123@gmail.com" class="contact-item scroll-reveal">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">nidhimehar123@gmail.com</span>
             </div>
-            
-            <div class = "col-sm-6">
-                <div class="sub-title">Microsoft Engage Mentorship Program 2020</div>
-                <div class="subbody">
-                    Microsoft Engage is a program created by Microsoft engineers, in association with Ace Hacker, 
-                    for students to work on projects with live interaction and help from engineers and mentors at Microsoft. 
-                    In 2020, the projects were based on the theme ‘Mars Colonization’.
-                </div>
-                <br/>
-                <div class="subbody"> 
-                    In this program, 600 students were selected from all over India and I was one of them. 
-                    I Learned AI concepts from Microsoft’s Experts and then developed a project using AI. 
-                </div>
+          </a>
+          <a href="https://linkedin.com/in/nidhi-mehar" target="_blank" class="contact-item scroll-reveal">
+            <div class="contact-icon">💼</div>
+            <div class="contact-info">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">nidhi-mehar</span>
             </div>
-           
+          </a>
+          <a href="https://github.com/nidhii1609" target="_blank" class="contact-item scroll-reveal">
+            <div class="contact-icon">💻</div>
+            <div class="contact-info">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">nidhii1609</span>
+            </div>
+          </a>
+          <a href="tel:+918287233592" class="contact-item scroll-reveal">
+            <div class="contact-icon">📱</div>
+            <div class="contact-info">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91-8287233592</span>
+            </div>
+          </a>
         </div>
-        <hr/>
+      </div>
+    </div>
+  </section>
 
-        <div class="container" id="projects">
-            <div class="titles">PROJECTS</div>
-            <div class="col-sm-6">
-                <div class="sub-title">Unbeatable Tic-Tac-Toe Game</div>
-                <div class="subbody">
-                    Unbeatable Tic-tac-toe Web Application powered by AI (Artificial Intelligence) by using Minimax Algorithm. 
-                    It uses HTML, CSS and JavaScript, hosted on GitHub pages for Microsoft’s Engage Mentorship Program 2020. 
-                    This game includes multiple levels from 1 to 4 and Unlimited. The power of AI increases from level 1 to 4 and 
-                    at unlimited level the game will become unbeatable. 
-                </div>
-                <br/>
-                <a class="project-link" href="https://nidhii1609.github.io/My-tic-tac-toe-project/">Game Link</a>
-                <a class="project-link" href="https://github.com/nidhii1609/My-tic-tac-toe-project">Project Link</a>
-            </div>
+  <footer class="footer">
+    <p>© 2026 Nidhi · Designed & Built with passion</p>
+  </footer>
 
-            <div class="col-sm-6">
-                <div class="sub-title">Helicopter Game</div>
-                <div class="subbody">
-                    In this game, the player operate the helicopter in a way that it should not collide with the walls 
-                    that come on its way. We have to rescue the helicopter from the obstacles and the score will be displayed 
-                    at the end. The game is developed by using Pygame which is a set of Python modules and it includes the sound 
-                    libraries for the Python programming language.
-                </div>
-                <br/>
-                <a class="project-link2" href="https://github.com/nidhii1609/Helicopter-game">Project Link</a>
-            </div>
-        </div>
-        <hr/>
-
-        <div class="container" id="my-skills">
-            <div class="titles">MY SKILLS</div>
-            <div class="col-sm-4">
-                <div class="skills-title">Programming Languages:</div>
-                <br/>
-                <br/>
-                <ul>
-                    <li>C/C++</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Python</li>
-                    <li>JavaScript (beginner)</li>
-                </ul>
-            </div>
-            <div class="col-sm-4">
-                <div class="skills-title">Frameworks/Libraries:</div>
-                <br/>
-                <br/>
-                <ul>
-                    <li>Bootstrap</li>
-                    <li>Numpy</li>
-                    <li>Pandas</li>
-                    <li>OpenCV</li>
-                    <li>Matplotlib</li>
-                    <li>Pygame</li>
-                </ul>
-            </div>
-            <div class="col-sm-4">
-                <div class="skills-title">Coursework:</div>
-                <br/>
-                <br/>
-                <ul>
-                    <li>Data Structures</li>
-                    <li>Algorithm Design and Analysis</li>
-                    <li>Object Oriented Programming</li>
-                    <li>Database Management System</li>
-                    <li>Operating System</li>
-                </ul>
-            </div>
-        </div>
-        <hr/>
-        <footer class="panel-footer" id="contact">
-            <div class="container">
-                <br/>   
-                <br/>
-                <div class="row">
-                    <a class="footer-link" href="https://www.linkedin.com/in/nidhi-mehar-37532a192/">
-                        LinkedIn
-                    </a>
-                    <a class="footer-link" href="https://github.com/nidhii1609">
-                        GitHub
-                    </a>
-                    <a class="footer-link" href="mailto:nidhimehar123@gmail.com">
-                        Email
-                    </a>
-                </div>
-                <br/>
-                <br/>
-              <div class="text-center" id="copy">&copy; Copyright Nidhi 2021</div>
-            </div>
-          </footer>
-    </body>
+  <script src="script.js"></script>
+</body>
 </html>
